@@ -7,6 +7,11 @@ Just a quick setup of Noty using Browserify + Budo + BrowserifyCSS
 3. Run `npm install` to get the dependencies
 4. Run `npm start` to launch the project in your default browser running on a local (`Node`-based) web server with `livereload` - all setup.
 
+## Where you'll find what
+* `index.js` is your browserify startup file. Thats got the reference to the CSS libs
+* `./src` is your source dir. It's got js and style folder
+* `main.js` thats got your Noty stuff in there
+
 ## Building the project for deployment
 This is split into two parts
 * `build.js`: Builds the `JS` and `CSS` outputs
