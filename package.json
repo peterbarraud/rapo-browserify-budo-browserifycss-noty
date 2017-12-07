@@ -1,0 +1,41 @@
+{
+  "name": "rapo-browserify-budo-browserifycss-noty",
+  "version": "1.0.0",
+  "description": "A rapid prototyping project for Browerify+Budo using Browserify-CSS to manage external CSS libs",
+  "main": "entry.js",
+  "scripts": {
+    "start": "budo index.js --live --open --port 9876 -- -g browserify-css",
+    "build": "node scripts/build && html-dist --config ./scripts/html-dist.config.js --input index.html",
+    "testbuild": "budo -d ./build --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterbarraud/rapo-browserify-budo-browserifycss-noty.git"
+  },
+  "keywords": [
+    "browserify",
+    "budo",
+    "prototyping",
+    "browserify-css",
+    "uglifyify",
+    "html-minifier"
+  ],
+  "author": "@gapeterb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterbarraud/rapo-browserify-budo-browserifycss-noty/issues"
+  },
+  "homepage": "https://github.com/peterbarraud/rapo-browserify-budo-browserifycss-noty#readme",
+  "devDependencies": {
+    "browserify-css": "^0.13.1",
+    "budo": "^10.0.4",
+    "html-dist": "^0.3.2",
+    "mkdirp": "^0.5.1",
+    "noty": "^3.1.3",
+    "rimraf": "^2.6.2",
+    "uglifyify": "^4.0.4"
+  },
+  "dependencies": {
+    "domready": "^1.0.8"
+  }
+}
